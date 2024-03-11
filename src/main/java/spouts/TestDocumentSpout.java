@@ -28,7 +28,7 @@ public class TestDocumentSpout extends BaseRichSpout {
     @Override
     public void nextTuple() {
         //StopWatch time = new StopWatch();
-        Utils.sleep(1000);
+        Utils.sleep(10);
         String document = getArticle();
         LOG.debug("Emitting tuple: {}", document);
         //LOG.info("spout time:" + time.getElapsedTime());

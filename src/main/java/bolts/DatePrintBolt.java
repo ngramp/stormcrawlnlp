@@ -17,7 +17,7 @@ public class DatePrintBolt extends BaseRichBolt {
 
     @Override
     public void execute(Tuple input) {
-        //System.out.println(input.getValue(0));
+        //DatePrintBoltSystem.out.println(input.getValue(0));
         collector.ack(input);
     }
 
